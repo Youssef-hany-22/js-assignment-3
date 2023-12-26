@@ -1,0 +1,49 @@
+body{
+
+    background-color: #F7ECDE;
+}
+
+
+h1{ 
+    /* font-family: 'Cedarville Cursive', cursive;
+font-family: 'Poppins', sans-serif; */
+font-family: "Pacifico", cursive;
+    border-bottom: 2px dotted black;
+    padding: 70px;
+    position: relative;
+    z-index: 1;
+    font-size: 50px;
+    font-weight:500
+
+}
+h1::after{
+    content: "";
+position: absolute;
+top: 55%;
+left: 50%;
+transform: translate(-50% ,-50%);
+width: 270px;
+height: 20px;
+background-color: #FEC260;
+z-index: -1;
+transition: all 0.5s;
+
+}
+h1:hover::after  {
+height: 60px;
+}
+.icon{
+    color: rgb(11, 161, 0);
+}
+.form{
+
+    border-bottom: 2px dotted black;
+}
+::selection {
+    background-color: #feac60;
+    color: #feac60;
+    opacity: 1;
+}
+.form button{
+    width: 170px;
+}
